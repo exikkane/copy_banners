@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+<id>copy_banners</id>
+<version>1.0</version>
+<priority>10000</priority>
+<position>0</position>
+<default_language>en</default_language>
+<status>active</status>
+<supplier>A. Larionov | CS-Cart</supplier>
+    <queries>
+        <item for="install">ALTER TABLE ?:banners ADD link_id mediumint unsigned not null</item>
+        <item for="uninstall">ALTER TABLE ?:banners DROP COLUMN link_id</item>
+    </queries>
+</addon>

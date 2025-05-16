@@ -1,0 +1,13 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+
+msgctxt "Addons::name::copy_banners"
+msgid "Copy Banners"
+msgstr "Copy Banners"
+
+msgctxt "Addons::description::copy_banners"
+msgid "The add-on adds the option of copying the banners to all storefronts while creating"
+msgstr "The add-on adds the option of copying the banners to all storefronts while creating"
