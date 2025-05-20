@@ -26,9 +26,10 @@ if ($mode == 'update') {
         }
 
         $child_banners = db_get_array(
-            "SELECT banner_id, company_id FROM ?:banners WHERE link_id = ?i AND banner_id != ?i",
+            "SELECT banner_id, company_id FROM ?:banners WHERE link_id = ?i AND banner_id != ?i AND company_id IN (?n)",
             $link_id,
-            $banner_id
+            $banner_id,
+            $storefront_ids
         );
 
         [$banners] = fn_get_banners(['item_ids' => $banner_id], DESCR_SL);
