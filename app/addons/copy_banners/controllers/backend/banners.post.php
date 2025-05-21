@@ -83,7 +83,6 @@ function fn_banners_images_clone($banners, $lang_code, $child_banner_id, $banner
         foreach (['', '_' . \Tygh\Enum\Addons\Abt_unitheme2\DeviceTypes::TABLET, '_' . \Tygh\Enum\Addons\Abt_unitheme2\DeviceTypes::MOBILE] as $device) {
 
             if (!empty($images[\Tygh\Enum\ImagePairTypes::MAIN][$device][$image_ids[$main_banner_id]]) || !empty($images[\Tygh\Enum\ImagePairTypes::ADDITIONAL][$device][$image_ids[$main_banner_id]])) {
-                fn_print_die($images[\Tygh\Enum\ImagePairTypes::ADDITIONAL]);
                 fn_clone_image_pairs($image_id, $image_ids[$main_banner_id], rtrim('abt__ut2/banners/' . ltrim($device ? $device : \Tygh\Enum\Addons\Abt_unitheme2\DeviceTypes::ALL, '_'), '/'), $lang_code);
             }
         }
